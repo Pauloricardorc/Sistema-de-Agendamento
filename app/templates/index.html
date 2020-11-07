@@ -1,0 +1,40 @@
+{% extends "base.html" %}
+{% load static %}
+{% block content %}
+
+<div id="preloader">
+    <i class="circle-preloader"></i>
+    <img src="{% static 'img/core-img/pizza.png' %}" alt="">
+</div>
+
+<div class="containerGrid">
+    <div class="conatinermenu">
+        <img src="https://upload.wikimedia.org/wikipedia/commons/1/1e/RPC-JP_Logo.png" class="rounded mx-auto d-block" alt="...">
+        <form>
+            <div class="form-group">
+              <label for="exampleInputEmail1">Email</label>
+              <input type="email" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp"  placeholder="Digite seu email...">
+              <small id="emailHelp" class="form-text text-muted">Caso não tenha email basta criar Um.</small>
+            </div>
+            <div class="form-group">
+              <label for="exampleInputPassword1">Senha</label>
+              <input type="password" class="form-control" id="exampleInputPassword1" placeholder="Password">
+            </div>
+            <div class="ContainerButton">
+                <button type="submit" class="btn btn-primary" style="width: 100px;">Entrar</button>
+                <button type="submit" class="btn btn-success" style="width: 100px;">Cadastrar</button>
+            </div>
+          </form>
+    </div>
+    <div class="Containerconteudo">
+        <img src="https://viciados.net/wp-content/uploads/2020/01/wallhaven-13mk9v.jpg" class="img-fluid image-f-fixad" alt="Responsive image">
+        <div class="conteudoP">
+            <p class="font-weight-bold text-co">Agendamento de Compromissos</p>
+            <p class="font-weight-bold">Fácil. Flexível. Dentro do orçamento.
+                Tenha uma agenda de reservas online na ponta dos seus dedos, crie o seu próprio sistema de agendamento e veja porque mais de 120.000 empresas ao redor do mundo confiam em nós.</p>
+        </div>
+    </div>
+</div>
+
+
+{% endblock %}
