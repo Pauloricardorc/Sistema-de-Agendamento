@@ -1,0 +1,18 @@
+{% load static %}
+
+<div class="conatinermenu_so">
+    <img src="https://images.vexels.com/media/users/3/137047/isolated/preview/5831a17a290077c646a48c4db78a81bb---cone-de-perfil-de-usu--rio-azul-by-vexels.png" alt="...">
+    <h5 class="text-white text-center">Bem Vindo(a), {{ user.username }}</h5>
+    <div class="menu_co">
+      <button type="button" class="btn btn-secondary button-menu"><a href="{% url 'lembrete' %}">Novo_Anotação</a></button>
+      <button type="button" class="btn btn-secondary button-menu"><a href="">Calendario</a> </button>
+      <button type="button" class="btn btn-secondary button-menu"><a href="">Configuração</a> </button>
+    </div>
+    <div class="logout">
+      <a class="btn btn-danger button-logout" href="{% url 'logout' %}" role="button">
+        <svg width="1.5em" height="1.5em" viewBox="0 0 16 16" class="bi bi-door-closed-fill" fill="currentColor" xmlns="http://www.w3.org/2000/svg">
+          <path fill-rule="evenodd" d="M4 1a1 1 0 0 0-1 1v13H1.5a.5.5 0 0 0 0 1h13a.5.5 0 0 0 0-1H13V2a1 1 0 0 0-1-1H4zm2 9a1 1 0 1 0 0-2 1 1 0 0 0 0 2z"/>
+        </svg>
+      </a>
+    </div>
+  </div>

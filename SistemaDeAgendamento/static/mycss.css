@@ -56,11 +56,74 @@
     text-shadow: 1px 1px 2px #222;
 }
 .conatinermenu_so{
-    background-color: #333;
+    background-color: rgb(64, 18, 128);
     box-shadow: 1px 1px 5px #333;
     width: 100%;
-    padding: 20px;
     display: flex;
     flex-direction: column;
     align-items: center;
+    position: relative;
+    border-left: 2px solid #333;
 }
+
+/* Button fixad no cato da ela */
+
+.buttonfixed{
+    width: 5em;
+    position: fixed;
+    /* margin-top: 20px; */
+    margin-bottom: 20px;
+    height: 50px;
+    right: 0;
+    left: 0;
+    top: 0;
+}
+
+/* Menu perfil */
+
+.menu_co {
+    width: 100%;
+    height: 100%;
+    padding: 0px;
+}
+.menu_co .button-menu{
+    width: 100%;
+    background-color: #FFF;
+    color: #333;
+    text-align: left;
+    padding: 20px 0;
+    border-radius: 0px;
+    font-weight: 600;
+    padding: 12px;
+    margin: 5px 0px;
+    transition: 0.3s all;
+}
+.menu_co .button-menu:hover{
+    border-left: 10px solid #333;
+    padding: 15px 0px;
+}
+.logout{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: fixed;
+    bottom: 50px;
+    width: 50%;
+}
+.logout .button-logout{
+    position: absolute;
+    width: 20%;
+}
+
+/* Cadastro de anotação */
+
+.content_cadastro{
+    width: 100%;
+    height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+/* Media query */
+

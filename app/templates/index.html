@@ -9,7 +9,7 @@
 
 <div class="containerGrid">
     <div class="conatinermenu">
-        <img src="https://upload.wikimedia.org/wikipedia/commons/1/1e/RPC-JP_Logo.png" class="rounded mx-auto d-block" alt="...">
+        <img src="{% static 'img/bg-img/Logo.png' %}" class="rounded mx-auto d-block" alt="...">
             <form action="{% url 'Home' %}" method="POST">
                 {% csrf_token %}
                 <div class="form-group">
