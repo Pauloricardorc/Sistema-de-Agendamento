@@ -55,15 +55,16 @@
     color: rgba(255, 255, 255, 0.829);
     text-shadow: 1px 1px 2px #222;
 }
-.conatinermenu_so{
-    background-color: rgb(64, 18, 128);
-    box-shadow: 1px 1px 5px #333;
+
+.conatinermenu_so {
+    background-color: #333;
+    box-shadow: -4px 2px 9px 0px #fff;
+    z-index: 1;
     width: 100%;
     display: flex;
     flex-direction: column;
     align-items: center;
     position: relative;
-    border-left: 2px solid #333;
 }
 
 /* Button fixad no cato da ela */
@@ -91,16 +92,14 @@
     background-color: #FFF;
     color: #333;
     text-align: left;
-    padding: 20px 0;
-    border-radius: 0px;
     font-weight: 600;
     padding: 12px;
     margin: 5px 0px;
     transition: 0.3s all;
 }
 .menu_co .button-menu:hover{
-    border-left: 10px solid #333;
-    padding: 15px 0px;
+    border-left: 25px solid #07e380;
+    padding: 12px 0px;
 }
 .logout{
     display: flex;
@@ -123,7 +122,65 @@
     display: flex;
     align-items: center;
     justify-content: center;
+    background-color: #335;
+    color: #fff;
 }
 
+.content_cadastro .criar_lembrete{
+    width: 100%;
+}
+
+/* Css minha agenda */
+
+.container.lo::-webkit-scrollbar {
+    background-color: #335;
+    width: 5px;
+}
+.container.lo::-webkit-scrollbar-thumb {
+    background-color: #fff;
+}
+.lo .space-caixa{
+    width: 100%;
+    display: flex;
+    justify-content: center;
+}
+
+.lo .caixa{
+    flex-grow: 0 !important;
+    margin: 20px !important;
+    height: 352px;
+}
+
+.lo .caixa  .caixa_lembrete{
+    display: flex;
+    flex-direction: column;
+}
+
+.card-text:last-child{
+    margin-bottom: 0;
+    height: 100%;
+}
+
+
+.lo .caixa .btn-perso{
+    border-radius: 0;
+}
+.lo .caixa .btn-perso:hover{
+    padding: .475rem .85rem;
+    margin: 0;
+}
 /* Media query */
 
+
+
+.calendario {
+    width: 100%;
+    height: auto;
+    background-color: #333;
+    padding: 10px 10px;
+    color: #333;
+}
+.calendario .comentario{
+    width: 100%;
+    position: relative;
+}

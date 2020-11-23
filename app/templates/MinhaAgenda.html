@@ -10,28 +10,27 @@
   
     {% include "Layout/Content_perfil.html" %}
 
-    <div class="container_menssage" style="position: relative;height: 100%;width: 100%;">
-        <div class="container lo" style="position: fixed;overflow: scroll;height: 100%; overflow-x: hidden; display: flex;width: 100%;justify-content: center;">
-          <div class="row row-cols-2">
+    <div class="container_menssage" style="position: relative;height: 100%;width: 100%; background-color: #335;">
+        <div class="container lo" style="overflow: scroll;height: 100vh; overflow-x: hidden; display: flex;width: 100%;justify-content: center;">
+			<div class="row space-caixa row-cols-2">
             
             {% if agenda %}
             {% for agendas in agenda %}
-                <div class="col">
-                  <div class="card" style="width: 20rem;">
-                      <div class="card-body">
-                          <h5 class="card-title">{{ agendas.titulo }}</h5>
-                          <p  class="card-subtitle text-muted">{{ agendas.date_lembrete}}</p>
-                          <p class="card-text">{{ agendas.lembrete }} </p>
-                          <a href="#" class="card-link btn btn-info">Editar</a>
-                          <a href="{% url 'deleta_lembrete' agendas.id %}" class="card-link btn btn-danger">Deletar</a>
-                      </div>
-                  </div>
-                </div>
-                {% endfor %}
-                {% else %}
-                {% endif %}
+                <div class="card caixa text-center" style="width: 18rem;">
+                    <div class="card-body caixa_lembrete">
+						<h5 class="card-title">{{ agendas.titulo }}</h5>
+						<p class="card-text">{{ agendas.lembrete }}</p>
+                    </div>
+					<a href="{% url 'deleta_lembrete' agendas.id %}" class="btn btn-danger btn-perso">Deletar</a>
+                    <div class="card-footer">
+						<small class="text-muted">{{ agendas.date_lembrete }}</small>
+                    </div>
+				</div>
+			{% endfor %}
+			{% else %}
+			{% endif %}
                 
-          </div>
+			</div>
         </div>
     </div>
 </div>

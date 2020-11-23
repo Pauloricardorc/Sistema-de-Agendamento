@@ -23,7 +23,7 @@ def index(request):
 def Dgenda(request):
     if request.user.is_authenticated:
         id = request.user.id
-        agenda = Agenda.objects.order_by('-date_lembrete').filter(pessoa=id)
+        agenda = Agenda.objects.order_by('-id').filter(pessoa=id)
         dados = {
             'agenda' : agenda
         }
@@ -71,3 +71,7 @@ def deleta_lembrete(request, agenda_id):
     agenda = get_object_or_404(Agenda, pk=agenda_id)   
     agenda.delete()
     return redirect('MinhaAgenda')
+
+
+def calendario(request):
+    return render(request, 'calendario.html')

@@ -13,7 +13,7 @@
             <form action="{% url 'Home' %}" method="POST">
                 {% csrf_token %}
                 <div class="form-group">
-                    <label for="exampleInputEmail1">Email</label>
+                    <label for="exampleInputEmail1">Email:</label>
                     <input type="email" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp"  placeholder="Digite seu email..." name="email">
                     <small id="emailHelp" class="form-text text-muted">Caso não tenha email basta criar Um.</small>
                 </div>

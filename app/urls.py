@@ -9,5 +9,6 @@ urlpatterns = [
     path('cadastro', views.cadastro, name="cadastro"),
     path('logout', views.logout, name="logout"),
     path('newlembrete', views.newlembrete, name="newlembrete"),
-    path('deleta_lembrete/<int:agenda_id>', views.deleta_lembrete, name="deleta_lembrete")
+    path('deleta_lembrete/<int:agenda_id>', views.deleta_lembrete, name="deleta_lembrete"),
+    path('calendario', views.calendario, name="calendario")
 ]
